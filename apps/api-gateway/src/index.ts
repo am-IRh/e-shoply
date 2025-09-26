@@ -11,7 +11,7 @@ app.use(
     origin: ["http://localhost:3000"],
     allowHeaders: ["Content-Type", "Authorization"],
     credentials: true,
-    allowMethods: ["POST"],
+    allowMethods: ["POST", "GET"],
   }),
 );
 // Body limit

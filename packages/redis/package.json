@@ -1,0 +1,11 @@
+{
+  "name": "@repo/redis",
+  "private": true,
+  "version": "0.0.0",
+  "dependencies": {
+    "@upstash/redis": "^1.35.4"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  }
+}
