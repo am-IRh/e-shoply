@@ -1,6 +1,7 @@
 {
   "name": "auth-service",
   "scripts": {
+    "build": "bun build src/index.ts --outdir dist --target node",
     "dev": "bun run --hot src/index.ts"
   },
   "dependencies": {
