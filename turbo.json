@@ -1,12 +1,12 @@
 {
   "$schema": "https://turborepo.com/schema.json",
   "ui": "tui",
+  "globalEnv": ["DATABASE_URL", "REDIS_URL", "REDIS_TOKEN"],
   "tasks": {
     "build": {
       "dependsOn": ["^build", "^db:generate", "^db:push"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**", "dist/**"],
-      "env": ["DATABASE_URL"]
+      "outputs": [".next/**", "!.next/cache/**", "dist/**"]
     },
     "lint": {
       "dependsOn": ["^lint"]
